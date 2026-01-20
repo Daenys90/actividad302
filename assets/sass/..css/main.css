@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(74, 77, 3);
+  margin: 0 20px;
+}
+
+main {
+  background-color: rgb(3, 30, 30);
+  padding: 0 30px;
+}
+
+h1, h2, h3 {
+  color: aliceblue;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p, span, li, a {
+  color: darkgray;
+}
+
+section {
+  margin: 40px 0;
+}
+
+.tarjetas {
+  background-color: green;
+}/*# sourceMappingURL=main.css.map */

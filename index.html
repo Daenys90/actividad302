@@ -6,16 +6,68 @@
   <title>Actividad 2</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Quintessential&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/main.css"/>
+  <link rel="stylesheet" href="assets\sass\..css\main.css">
 </head>
 <body>
-    
+  <main> 
+    <h1>Actividad 2</h1>
+<section class="seccion__primera">
+<h2>Parte 1: Comprender BEM</h2>
+<h3>¿En qué consiste BEM?</h3>
+<p>BEM es una metodología de organización de CSS. Su elemento más característico es la forma de nombrar las clases según la siguiente clasificación:</p>
+<ul>
+  <li>Bloque: El elemento principal, contenedor, boton, etc</li>
+  <li>Elemento: Un componente dentro del elemento principal, como un ícono, imagen, etc</li>
+  <li>Modificador: Una variación o modificación de un elemento</li>
+</ul>
+<p>Por ejemplo, podríamos tener: <br>
+   contenedor: "tarjeta" <br>
+   elemento: "tarjeta__titulo" <br>
+   modificador: "tarjeta--principal"  
+  </p>
+<span>Ejemplo:</span>
+<p>El sitio web loaf.com usa BEM para dar nombre a las clases y organizar el html y css:</p>
+<img src="assets\img\captura.png" alt="ejemplo de BEM" class="w-80">
+<p>Podemos ver nombres de clases como "banner--content" y "banner--light" lo que nos siguiere que son diferentes variaciones del contenedor "banner"</p>
+</section>
+
+<section class="seccion__segunda">
+<h2 class="encabezado2">Parte 2: Aplicación de BEM</h2>
+  <div class="card tarjetas" style="width: 18rem;">
+  <img src="assets/img/hojas.jpg" class="card-img-top" alt="hojas">
+  <div class="card-body tarjetas__interior">
+    <h5 class="card-title tarjetas__titulo">Usando BEM</h5>
+    <p class="card-text tarjeta__texto">Para poder ver las clases se debe usar el inspector de elementos en tu navegador de preferencia.</p>
+  </div>
+</div>
+</div>
+</section>
+<section class="seccion__tercera">
+<h2>Parte 3: Comparación de OOCSS con SMACSS</h2>
+<h3>Principios de OOCSS</h3>
+<p>Programación orientada a objetos si decide dedicarse al diseño. Aquí se busca separar al contenedor y el contenido, que serían el html y el css respectivamente. Su principal razón de ser es poder tener hojas de estilos ordenas y más rápidas de usar, al evitar la repetición, esto a través de la repetición de códigos. Se tratan los elementos como objetos que tienen características que pueden agruparse, por ejemplo separando colores, efectos o diseños que se repetirán en diferentes "objetos".</p>
+<p>Podemos aplicarlo en la modularizacón de CSS al separar "objetos" que tengan estilos similares en una sola clase reutilizable. Por ejemplo si tengo un e-commerce y quiero darle un estilo particular a los productos en rebaja, puedo hacer una clase que se aplique a todos estos productos, diferente al resto a precio normal.</p>
+<h3>Principios de SMACSS</h3>
+<p>Arquitectura escalable y modular para CSS: se basa en categorizar los estilos en diferentes tipos, como base, layout, module, state y theme, de esa manera se ordena y reduce la cantidad de líneas de un css</p>
+<ol>
+<li><strong>Base:</strong> Estilos por defecto para elementos HTML.</li>
+<li><strong>Layout:</strong> Estilos para la disposición y estructura.</li>
+<li><strong>Module:</strong> Estilos para componentes reutilizables.</li>
+<li><strong>State:</strong> Estilos para describir cómo los módulos o layouts cambian.</li>
+<li><strong>Theme:</strong> Estilos específicos para temas o sub-temas.</li>
+</ol>
+</section>
+
+<section class="seccion_cuarta">
+<h2>Parte 4: Beneficios y ventajas</h2>
+<h3>Beneficios y desventajas de cada metodología</h3>
+<p>Las ventajas de cada uno se explicaron en cada sección: orden y reutilización, lo que en teoría daría un código más breve. Sin embargo,creo que la simpleza es relativa: en proyectos cortos puede resultar en código más largo (me pasó una vez con SASS), además que estás cambiando muchas líneas de código por más clases/variables y muchos archivos. Creo que puede ser intimidante encontrarse con un proyecto que tiene diez hojas de estilo, entender dónde va qué (¡y recordarlo), lo que puede agregar más tiempo a un proyecto.</p>
+<p>BEM tiene la ventaja de que tener una nomenclatura clara y se puede entender qué es qué solo al ver el nombre de la clase, lo que es un aspecto positivo si se trabaja en un equipo, ya que todos entenderían a qué se refiere cada clase. Si debo pensar en desventajas, yo, persona que está acostumbrada a trabajar sola, me ocurre que encuentro que los nombres resultantes puede resultar muy largos, engorrosos y francamente horribles. Ahora que la he estado usando me ha costado poder recordar qué es qué, ya que mi forma de trabajar es usar nombres de clases que me recuerden al elemento o incluso humorísticos. Por ej, en vez "tarjeta__imagen--hoja" prefiero "imagen-hoja" o "imghoja". También me ha costado usarlo porque funciona al revés de cómo pienso (prefiero "titulo-contenedor" a "contenedor__titulo"). Entre todos los modelos me parece el que tiene un curva de aprendizaje más pequeña, pero lo feo que se ve el código creo que impedirá que lo use para proyectos en los que trabaje sola</p>
+<p>Respecto a los otros dos: engorrosos y sobrecomplicados. Estuve leyendo en reddit algunas opiniones en r/frontend y otros, muchos dicen que los usan poco debido a lo complejo que se puede volver. En lo personal prefiero una sola hoja de código, ni siquiera me gusta usar muchos comentarios porque la vista se me pasa sobre ellos y no los leo y me molestan, pero a veces me obligo a usarlos para ordenar la hoja si está muy larga (aunque no lea las separaciones que hago).</p>
+<p>Me imagino intentando recordar donde dejé cada cosa y me estreso de solo pensarlo. Recién estaba haciendo el ejercicio con SASS y ya me enredé porque no me acordaba donde había puesto el h3. ¿Me permiten una infidencia? Tenía ganas de iniciar este módulo porque me gusta el diseño de los sitios, también he estudiado de UX porque me gusta, tenía altas expectativas, pero desde que comenzamos a ver todo esto de SMACK OOCD SASS o cómo se llamen (cada uno más complicado de escribir que el anterior) perdí mucho entusiasmo, solo escuchaba las clases, pero no hacía las actividades, tantas carpetas me hacían sentir angustiada (overwhelmed como dicen los gringos). Estoy ha última hora haciendo todo porque me pareció todo tan tan feo y cuesta arriba. No me nace usarlos, como había mencionado en clases, aprendí SASS y luego olvidé su existencia, se me olvidaba cómo se llaman las variables u olvidaba usarlas y volvía al css vanilla. A veces no hay que arreglar lo que ya funciona.</p>
+</section>
+</main>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="scripts/script.js"></script>
 </body>
 </html>
-<!--FIGMA: https://www.figma.com/design/x0Pf8j8X5EF04DpUytOqlp/actividad301?node-id=0-1&t=Hx0Kxvm495IwNvvW-1 -->
