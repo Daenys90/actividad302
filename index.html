@@ -6,14 +6,125 @@
   <title>Te ayudo a solucionar tus problemas</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
- 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Quintessential&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css"/>
 </head>
 <body>
-</body>
+<!-- nav -->
+    <header class="menu1">
+    <a href="index.html" class="menu1__home">Ps. Ana Lucía</a> 
+     <a href="agenda.php" class="menu1__agenda">Agenda aquí</a>
+    </header>
+<main class="principal">
+<!-- seccion presentacion hero-->
+<section class="presentacion">
+<div class="presentacion__nombre">
+    <h1>Ana Lucía</h1>
+    <span>Psicóloga - Universidad de Titirilquén</span>
+</div>
+<div class="presentacion__foto">
+<img src="/assets/img/foto_presentacion.png" alt="fotografía mujer con lentes">
+</div>
+</section>
+<section class="experiencia">
+    <!-- 1-->
+<div class="experiencia__contenedor">
+<div class="experiencia__logo">
+<img src="/assets/img/logo_universidad1.png" alt="logo universidad">
+</div>
+<div class="experiencia__titulo">
+    <h2>Licenciatura en Psicología</h2>
+    <p class="experiencia__titulo--uni">Universidad de Titirilquén 2015-2021</p>
+</div>
+</div>
+ <!-- 2-->
+<div class="experiencia__contenedor">
+    <div class="experiencia__logo">
+<img src="/assets/img/logo_universidad1.png" alt="logo universidad">
+</div>
+<div class="experiencia__titulo">
+    <h2>Magíster en Ciencias Sociales</h2>
+    <p class="experiencia__titulo--uni">Universidad de Titirilquén</p>
+</div>
+</div>
+ <!-- 3-->
+<div class="experiencia__contenedor">
+    <div class="experiencia__logo">
+<img src="/assets/img/logo_universidad1.png" alt="logo universidad">
+</div>
+<div class="experiencia__titulo">
+    <h2>Diplomado en Emprendimiento</h2>
+    <p class="experiencia__titulo--uni">Universidad de Titirilquén</p>
+</div>
+</div>
+</section>
+<section class="testimonios">
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+     <span class="testimonios__titulo">Excelente experiencia</span>
+     <p class="testimonios__texto py-3">“Desde la primera sesión me sentí escuchada y comprendida. La forma en que aborda cada tema transmite mucha calma y profesionalismo. Ha sido un espacio seguro para reflexionar y avanzar”</p>
+    </div>
+    <div class="carousel-item">
+     <span class="testimonios__titulo">Experiencia muy positiva</span>
+     <p class="testimonios__texto py-3">“La atención fue muy cercana y respetuosa. Me ayudó a ordenar ideas y a ver situaciones desde otra perspectiva. Sin duda, una experiencia muy positiva”</p>
+    </div>
+    <div class="carousel-item">
+    <span class="testimonios__titulo">Empática y cercana</span>
+     <p class="testimonios__texto py-3">“Destaco su empatía y claridad al explicar los procesos. Cada sesión se sintió bien guiada y adaptada a lo que necesitaba en ese momento”</p>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</section>
+<section class="agendar p-5">
+    <h3 class="agendar__titulo">Para agendar hora por primera vez, debes enviar una solicitud. Juntos encontraremos una solución a tus problemas</h3>
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Tu correo electrónico</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="correo@ejemplo.com">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Explícame tu situación y horarios disponibles</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+<button type="button" class="btn btn-primary agendar__boton">Enviar</button>
+</section>
+
+</main>
+<footer>
+    <div class="footer__fila">
+        <ul>
+            <li><a class="footer__item" href="">Experiencia laboral</a></li>
+             <li><a href="" class="footer__item">Publicaciones</a></li>
+              <li><a class="footer__item" href="">Certificaciones</a></li>
+        </ul>
+    </div>
+     <div class="footer__fila">
+        <ul>
+            <li><a class="footer__item" href="">analuciaps@titirilquenu.cl</a></li>
+             <li><a href="" class="footer__item">LinkedIn</a></li>
+        </ul>
+    </div>
+     <div class="footer__fila">
+        <ul>
+            <li><a class="footer__item" href="">Agendar hora pacientes nuevos</a></li>
+             <li><a class="footer__item" href="">Agendar hora pacientes antiguos</a></li>
+        </ul>
+    </div>
+</footer>
+</body>  
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="scripts/script.js"></script>
 </body>
 </html>
-<!--toy cansao gfe-->
+<!--FIGMA: https://www.figma.com/design/x0Pf8j8X5EF04DpUytOqlp/actividad301?node-id=0-1&t=Hx0Kxvm495IwNvvW-1 -->
